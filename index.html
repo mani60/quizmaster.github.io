@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- top section -->
+  <div class="intro py-2 bg-primary text-center">
+    <div class="container">
+      <h2 class="text-white display-3 my-4">Quiz</h2>
+    </div>
+  </div>
+  <div class="result py-4 d-none bg-primary text-center">
+    <div class="container lead">
+      <p class="text-white">You are <span class="text-white display-4 p-3">0%</span> Quiz Master</p>
+    </div>
+  </div>
+  <!-- quiz section -->
+  <div class="quiz py-4 bg-white">
+    <div class="container">
+      <h2 class="my-5 text-primary">On with the questions...</h2>
+
+      <form class="quiz-form text-primary" method="post">
+        <div class="my-5">
+          <p class="lead font-weight-normal">1. How do you instantiate an array in Java?</p>
+          <p class="d-none correct text-success">Correct.  </p>
+          <p class="d-none wrong  text-danger">Correct answer is A.</p>
+          <p class="explanation d-none">Note that int arr[]; is declaration whereas int arr[] = new int[3]; is to instantiate an array.</p>
+          <div class="form-check my-2 text-dark">
+            <input type="radio" name="q1" value="A">
+            <label class="form-check-label">int arr[] = new int[3];</label>
+          </div>
+          <div class="form-check my-2 text-dark">
+            <input type="radio" name="q1" value="B">
+            <label class="form-check-label">int arr[] = new int(3);</label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="lead font-weight-normal">2. Which of the following is the correct way to declare a multidimensional array in Java?</p>
+          <p class="d-none correct text-success">Correct.  </p>
+          <p class="d-none wrong text-danger">Correct answer is B.</p>
+          <p class="explanation d-none">The syntax to declare multidimensional array in java is either int[][] arr; or int arr[][];</p>
+          <div class="form-check my-2 text-dark">
+            <input type="radio" name="q2" value="A">
+            <label class="form-check-label">int[[]] arr;</label>
+          </div>
+          <div class="form-check my-2 text-dark">
+            <input type="radio" name="q2" value="B">
+            <label class="form-check-label">int[][]arr;</label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="lead font-weight-normal">3. When does the ArrayIndexOutOfBoundsException occur?</p>
+          <p class="d-none correct text-success">Correct.  </p>
+          <p class="d-none wrong text-danger">Correct answer is A.</p>
+          <p class="explanation d-none">ArrayIndexOutOfBoundsException is a run-time exception and the compilation is error-free.</p>
+          <div class="form-check my-2 text-dark">
+            <input type="radio" name="q3" value="A" >
+            <label class="form-check-label">Run-time</label>
+          </div>
+          <div class="form-check my-2 text-dark">
+            <input type="radio" name="q3" value="B">
+            <label class="form-check-label">Compile-time</label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="lead font-weight-normal">4. Elements in an array are accessed?</p>
+          <p class="d-none correct text-success">Correct.  </p>
+          <p class="d-none wrong text-danger">Correct answer is B.</p>
+          <p class="explanation d-none">Elements in an array are accessed randomly. In Linked lists, elements are accessed sequentially.</p>
+          <div class="form-check my-2 text-dark">
+            <input type="radio" name="q4" value="A">
+            <label class="form-check-label">sequentially</label>
+          </div>
+          <div class="form-check my-2 text-dark">
+            <input type="radio" name="q4" value="B">
+            <label class="form-check-label">randomly</label>
+          </div>
+        </div>
+        <div class="text-center">
+          <input type="submit" class="btn btn-danger"> 
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" target="_blank" href="https://www.instagram.com/manikanta10/">MMR</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+  <script src="sandbox.js"></script>
+</body>
+</html>
